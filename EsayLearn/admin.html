@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - LearnEasy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+    <div class="logo">📖 LEARNEASY</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="library.html">Library</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+</header>
+
+<!-- Title -->
+<section class="hero">
+    <h1>Admin Panel</h1>
+    <p>Add new study materials</p>
+</section>
+
+<!-- Form Section -->
+<section class="cards">
+
+    <div class="card">
+        <h3>Add New Note</h3>
+
+        <input type="text" id="title" placeholder="Enter Subject Name"><br><br>
+        <input type="text" id="file" placeholder="Enter File Name (example: java.pdf)"><br><br>
+
+        <button onclick="addNote()">Add Note</button>
+    </div>
+
+</section>
+
+<!-- Display Section -->
+<section class="cards" id="notesContainer">
+    <!-- New notes will appear here -->
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 LearnEasy. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+<!-- http://127.0.0.1:5500/index.html -->
+</body>
+</html>
