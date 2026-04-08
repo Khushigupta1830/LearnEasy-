@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes - LearnEasy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+    <div class="logo">📖 LEARNEASY</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="library.html">Library</a>
+        <a href="notes.html">Notes</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+</header>
+
+<!-- Title -->
+<section class="hero">
+    <h1>📘 Notes Section</h1>
+    <p>Add and manage your study notes easily</p>
+</section>
+
+<!-- ✅ ADD NOTE FORM -->
+<section class="cards">
+    <div class="card">
+        <h3>Add New Note</h3>
+
+        <input type="text" id="title" placeholder="Enter Subject Name"><br><br>
+        <input type="text" id="file" placeholder="Paste Google Drive Link"><br><br>
+
+        <button onclick="addNote()">Add Note</button>
+    </div>
+</section>
+
+<!-- ✅ DISPLAY NOTES -->
+<section class="cards">
+    <h2 style="text-align:center;">📚 Your Notes</h2>
+    <div id="notesContainer"></div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 LearnEasy. All rights reserved.</p>
+</footer>
+
+<!-- ✅ Firebase MUST come BEFORE script.js -->
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+
+<!-- ✅ Your JS (ONLY ONCE) -->
+<script src="script.js"></script>
+
+</body>
+</html>
