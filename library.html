@@ -24,33 +24,10 @@
     <p>Access all your study materials in one place</p>
 </section>
 
-<!-- Library Content -->
+<!-- 🔥 FIREBASE DATA WILL SHOW HERE -->
 <section class="cards">
-
-    <div class="card">
-        <h3>Java Notes</h3>
-        <p>Core Java concepts and programs</p>
-        <button onclick="openFile('java.pdf')">Open</button>
-    </div>
-
-    <div class="card">
-        <h3>Python Notes</h3>
-        <p>Basics to advanced Python</p>
-        <button onclick="openFile('python.pdf')">Open</button>
-    </div>
-
-    <div class="card">
-        <h3>DBMS Notes</h3>
-        <p>Database concepts for exams</p>
-        <button onclick="openFile('dbms.pdf')">Open</button>
-    </div>
-
-    <div class="card">
-        <h3>Operating System</h3>
-        <p>Important OS topics and notes</p>
-        <button onclick="openFile('os.pdf')">Open</button>
-    </div>
-
+    <h2 style="text-align:center;">📚 Available Notes</h2>
+    <div id="notesContainer"></div>
 </section>
 
 <!-- Footer -->
@@ -58,7 +35,11 @@
     <p>© 2026 LearnEasy. All rights reserved.</p>
 </footer>
 
-<!-- JS -->
+<!-- ✅ Firebase FIRST -->
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+
+<!-- ✅ THEN your JS (ONLY ONCE) -->
 <script src="script.js"></script>
 
 </body>
