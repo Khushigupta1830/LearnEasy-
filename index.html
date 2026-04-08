@@ -10,7 +10,7 @@
 
 <!-- Navbar -->
 <header class="navbar">
-    <div class="logo"> LEARNEASY</div>
+    <div class="logo">LEARNEASY</div>
     <nav>
         <a href="index.html">Home</a>
         <a href="library.html">Library</a>
@@ -51,12 +51,19 @@
     <button onclick="goToLibrary()">Get Started →</button>
 </section>
 
+<!-- ✅ TEST BUTTON (OPTIONAL) -->
+<button onclick="addNote()">Add Test Data</button>
+
 <!-- Footer -->
 <footer>
     <p>© 2026 LearnEasy. All rights reserved.</p>
 </footer>
 
-<!-- JS -->
+<!-- ✅ FIREBASE COMPAT SDK (VERY IMPORTANT) -->
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+
+<!-- ✅ YOUR SCRIPT -->
 <script src="script.js"></script>
 
 </body>
